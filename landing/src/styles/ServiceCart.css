@@ -1,7 +1,7 @@
 .cart__container {
     justify-content: center;
     width: 250px;
-    background: #FAFBFF;
+    background: #f8f8f8;
     border-radius: 8px;
     padding: 16px;
 }
@@ -22,12 +22,27 @@
 
 .text .title {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 10px 0;
 }
 
 .text .description {
     word-break: break-word;
-    color: #94969a;
+    color: #6f6f6f;
 }
 
+.visitBtns {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    height: 36px;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}

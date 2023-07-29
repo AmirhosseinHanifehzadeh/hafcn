@@ -12,6 +12,7 @@ function ServiceCart({icon, title, description}) {
                 <div className="title">{title}</div>
                 <div className="description">{ description }</div>
             </div>
+            <button className="visitBtns">بازدید</button>
         </div>
     )
 }
