@@ -40,7 +40,7 @@ function ContactUs() {
                         <div><EmailIcon className="icon" /></div> 
                         <div>hafcn@gmail.com</div>
                     </div>
-                    <div className="info">
+                    with react       <div className="info">
                         <div><LocationOnIcon className="icon" /> </div>
                         <div>تهران همین نزدیکی</div>
                     </div>

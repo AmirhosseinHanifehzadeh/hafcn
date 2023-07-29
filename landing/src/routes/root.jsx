@@ -7,7 +7,8 @@ import {
   useTheme,
   useMediaQuery,
 } from "@material-ui/core";
-import DrawerComponent from "./Drawer";
+import DrawerComponent from "../components/Drawer";
+import { Outlet } from "react-router-dom";
 
 import "../styles/navbar.css"
 
@@ -24,12 +25,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Navbar() {
+function Root() {
   const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
+    <>
     <AppBar className={classes.container} position="sticky">
       <CssBaseline />
       <Toolbar>
@@ -54,7 +56,9 @@ function Navbar() {
         )}
       </Toolbar>
     </AppBar>
+    <Outlet />
+    </>
   );
 }
-export default Navbar;
+export default Root;
 

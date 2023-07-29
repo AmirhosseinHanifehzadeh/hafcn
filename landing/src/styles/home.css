@@ -1,0 +1,62 @@
+button:hover {
+    transform: scale(1.05);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+    cursor: pointer;
+  }
+  
+  .App {
+    background: #fff;
+  }
+  
+  .services__container {
+    margin: 0 100px; 
+  }
+  
+  .image__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .description__container {
+    padding: 48px;
+    padding-right: 0 !important;
+  }
+  
+  .description__container .title {
+    font-size: 33px;
+  }
+  
+  .description__container .description {
+    color: #6f6f6f;
+    line-height: 1.4;
+    margin-top: -15px;
+  }
+  
+  .landing-img {
+    width: 50%;
+  }
+  
+  .goToServicesBtn {
+    width: 120px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    height: 32px;
+    background-color: transparent; 
+  }
+  
+  .services-carts__container {
+    padding: 50px 0;
+  }
+  
+  .services-carts_title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-carts__container .carts {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  

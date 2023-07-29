@@ -1,21 +1,20 @@
 import { useRef } from 'react'; 
 // components
-import Navbar from './components/Navbar';
-import ServiceCart from './components/ServiceCart';
-import ContactUs from './components/ContactUs';
+import ServiceCart from '../components/ServiceCart';
+import ContactUs from '../components/ContactUs';
 //styles 
-import './App.css';
+import '../styles/home.css';
 // assets
-import LandingPic from "./assets/images/landing.jpg";
-import LoanPic from "./assets/images/loan.jpg";
-import PouyeshPic from "./assets/images/pouyesh.jpg"
-import EshteghalPic from "./assets/images/eshteghal.jpg"
-import FinacialAidsPic from "./assets/images/financialHelp.jpg"
+import LandingPic from "../assets/images/landing.jpg";
+import LoanPic from "../assets/images/loan.jpg";
+import PouyeshPic from "../assets/images/pouyesh.jpg"
+import EshteghalPic from "../assets/images/eshteghal.jpg"
+import FinacialAidsPic from "../assets/images/financialHelp.jpg"
 // font
-import './assets/fonts/main.css'
+import '../assets/fonts/main.css'
 
 
-function App() {
+function Home() {
   const scrollRef = useRef(null);
 
   const handleScrollToHeight = () => {
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
       <div className='services__container'>
         <div className='image__container'>
             <div className='description__container'>
@@ -55,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
