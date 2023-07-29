@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Navbar() {
+function Navbar({scrollToContact, scrollToHome}) {
   const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -40,11 +40,11 @@ function Navbar() {
         ) : (
           <div className={classes.navlinks}>
             <div>
-              <button className="router-btns">
-                <Link to={`/home`} className="link">خانه</Link>
+              <button className="router-btns" onClick={scrollToHome}>
+                خانه
               </button>
               <button className="router-btns">بلاگ</button>
-              <button className="router-btns">تماس با ما</button>
+              <button className="router-btns" onClick={scrollToContact}>تماس با ما</button>
             </div>
             <div className="login-btns__container">
               <button  className="btns">

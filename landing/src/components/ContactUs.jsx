@@ -24,7 +24,7 @@ function ContactUs() {
     }
 
     return (
-        <>
+        <div className="contactus-page">
             <h1 className="services-carts_title">تماس با ما</h1>
             <div className="container">
                 <div className="infos__container">
@@ -58,7 +58,7 @@ function ContactUs() {
                     <button className="send-btn" onClick={sendMessage}>فرستادن پیام</button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
