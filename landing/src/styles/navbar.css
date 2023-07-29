@@ -17,3 +17,8 @@
 .btns:first-child {
     margin-left: 24px;
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}

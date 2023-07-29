@@ -12,6 +12,7 @@ import EshteghalPic from "../assets/images/eshteghal.jpg"
 import FinacialAidsPic from "../assets/images/financialHelp.jpg"
 // font
 import '../assets/fonts/main.css'
+import Navbar from '../components/Navbar';
 
 
 function Home() {
@@ -23,6 +24,7 @@ function Home() {
 
   return (
     <div className="App">
+        <Navbar />
       <div className='services__container'>
         <div className='image__container'>
             <div className='description__container'>

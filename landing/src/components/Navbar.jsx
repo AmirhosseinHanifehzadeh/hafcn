@@ -8,7 +8,7 @@ import {
   useMediaQuery,
 } from "@material-ui/core";
 import DrawerComponent from "../components/Drawer";
-import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../styles/navbar.css"
 
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Root() {
+function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -40,25 +40,25 @@ function Root() {
         ) : (
           <div className={classes.navlinks}>
             <div>
-              <button className="router-btns">خانه</button>
+              <button className="router-btns">
+                <Link to={`/home`} className="link">خانه</Link>
+              </button>
               <button className="router-btns">بلاگ</button>
               <button className="router-btns">تماس با ما</button>
             </div>
-            <div className="login__container">
+            <div className="login-btns__container">
               <button  className="btns">
-                ورود
+                <Link to={`/login`} className="link">ورود</Link>
               </button>
               <button className="btns">
-                ثبت نام
+                <Link to={`/signup`} className="link">ثبت نام</Link>
               </button>
             </div>
           </div>
         )}
       </Toolbar>
     </AppBar>
-    <Outlet />
     </>
   );
 }
-export default Root;
-
+export default Navbar;
