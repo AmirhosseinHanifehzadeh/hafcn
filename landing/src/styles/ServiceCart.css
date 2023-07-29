@@ -1,0 +1,33 @@
+.cart__container {
+    justify-content: center;
+    width: 250px;
+    background: #FAFBFF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.icon {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon img {
+    border-radius: 50%;
+    width: 130px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.text .description {
+    word-break: break-word;
+    color: #94969a;
+}
+
