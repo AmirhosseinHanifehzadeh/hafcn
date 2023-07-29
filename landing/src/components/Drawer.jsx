@@ -8,7 +8,7 @@ import {
  makeStyles
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const useStyles = makeStyles(()=>({
     link:{
